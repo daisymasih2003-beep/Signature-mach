@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+True flask import Flask, render_template, request
 import os
 import cv2
 from skimage.metrics import structural_similarity as ssim
@@ -133,4 +133,4 @@ def index():
     return render_template("index.html", similarity=similarity)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5000)
